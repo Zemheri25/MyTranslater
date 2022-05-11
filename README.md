@@ -2,4 +2,4 @@
 ## Have used axios Api working.
 ## There is limitation for Api.Sorry about it If you can not use :(
 
-## https://lighthearted-khapse-567f12.netlify.app/
+## https://zemheri25-owntranslator.netlify.app/
