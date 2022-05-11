@@ -1,5 +1,5 @@
 ## Have created own translator.
 ## Have used axios Api working.
-## There is limitation for Api.Sorry about If you can not use :(
+## There is limitation for Api.Sorry about it If you can not use :(
 
 ## https://lighthearted-khapse-567f12.netlify.app/
