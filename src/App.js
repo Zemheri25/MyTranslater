@@ -2,17 +2,26 @@ import "./App.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
+import Languages from "./components/Languages"
+
 
 
 function App() {
   const [input, setInput] = useState("");
   const [translated, setTranslate] = useState("");
 
+  const [language, setLanguage] = useState('');
+
+  const handleChange = (event) => {
+    setLanguage(event.target.value);
+  };
+  
+
   const options = {
     method: "GET",
     url: "https://translated-mymemory---translation-memory.p.rapidapi.com/api/get",
     params: {
-      langpair: "en|tr",
+      langpair: `en|${language}`,
       q: input,
       mt: "1",
       onlyprivate: "0",
@@ -40,7 +49,8 @@ function App() {
 
   useEffect(() => {
     console.log(input);
-  }, [input]);
+    console.log(language)
+  }, [input, language]);
   return (
     <div className="App">
       <div>
@@ -70,8 +80,10 @@ function App() {
         />
       </div>
 
+      <Languages language = {language} handleChange = {handleChange}/>
+
       <div>
-        <h1 style={{color: "white"}}>Translate English to Turkish</h1>
+        <h1 style={{color: "white"}}>Translate English to Any Language</h1>
       </div>
 
       <Footer />
