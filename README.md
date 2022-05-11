@@ -1,4 +1,4 @@
-## Have created own translater.
+## Have created own translator.
 ## Have used axios Api working.
 ## There is limitation for Api.Sorry about If you can not use :(
 
