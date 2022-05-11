@@ -1,0 +1,18 @@
+.footermain {
+    border: 5px solid white ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 30rem;
+    margin-top:10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
